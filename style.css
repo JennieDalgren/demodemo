@@ -1,0 +1,101 @@
+body {
+  margin: 0;
+}
+
+header {
+  width: 100%;
+  background-color: paleturquoise;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  /* border: 1px solid; */
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-logo {
+  width: 140px;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.gallery img {
+  width: 100%;
+}
+
+.card {
+  border: 1px solid #ccc;
+  margin: 5px;
+  width: 24%;
+  flex-grow: 1;
+}
+
+.demo-container {
+  box-sizing: border-box;
+  width: 100%;
+  position: relative;
+}
+
+.demo-container p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+.demo-container img {
+  width: 100%;
+}
+
+.news {
+  background-image: url("bino.png");
+  background-size: cover;
+  background-position: center;
+  width: 300px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.news h1 {
+  opacity: 1;
+}
+
+.news:hover h1 {
+  opacity: 0;
+}
+
+.news h2 {
+  opacity: 0;
+}
+
+.news:hover h2 {
+  opacity: 1;
+}
+
+/* .news:hover {
+  opacity: 0.5;
+  cursor: pointer;
+} */
+
+/* TABLET */
+@media (max-width: 1024px) {
+  .card {
+    width: 40%;
+  }
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .card {
+    width: 100%;
+  }
+}
